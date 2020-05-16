@@ -26,6 +26,7 @@ const DatePicker = ({
   disabled,
   InputComponent,
   DoneBarComponent,
+  iOSPickerStyle,
 }) => {
   const [pickedDate, setPickedDate] = useState(date || new Date());
   const [show, setShow] = useState(false);
@@ -119,6 +120,7 @@ const DatePicker = ({
     renderInput: renderInputButton,
     renderDoneBar: renderDoneBarButton,
     containerStyle: containerStyle,
+    iOSPickerStyle: iOSPickerStyle
   };
 
   return isIOS ? (

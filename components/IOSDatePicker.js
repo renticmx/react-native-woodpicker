@@ -16,6 +16,7 @@ const IOSDatePicker = ({
   togglePicker,
   onDateChange,
   containerStyle,
+  iOSPickerStyle,
 }) => {
   return (
     <View style={containerStyle}>
@@ -44,6 +45,7 @@ const IOSDatePicker = ({
             minimumDate={minimumDate}
             maximumDate={maximumDate}
             locale={locale}
+            style={iOSPickerStyle}
           />
         </View>
       </Modal>
